@@ -1,36 +1,113 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Personal Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIT Student Placement Portal</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f5fa;
+      color: #243047;
+    }
+    header {
+      background: #12346b;
+      color: white;
+      padding: 24px;
+      text-align: center;
+    }
+    nav {
+      background: #1e4b91;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+    }
+    main { max-width: 1000px; margin: auto; padding: 24px; }
+    .stats, .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #0001;
+    }
+    .number { color: #1e4b91; font-size: 28px; font-weight: bold; }
+    button {
+      padding: 10px 16px;
+      background: #1e4b91;
+      color: white;
+      border: 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer { text-align: center; padding: 20px; background: #12346b; color: white; }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>VIT Student Placement Portal</h1>
+    <p>Your gateway to career opportunities</p>
+  </header>
 
-    <h1>Personal Profile</h1>
+  <nav>
+    <a href="#stats">Statistics</a>
+    <a href="#students">Students</a>
+    <a href="#companies">Companies</a>
+    <a href="#drives">Recruitment Drives</a>
+  </nav>
 
-    <h2>Name</h2>
-    <p>Fardin Faruq</p>
+  <main>
+    <section id="stats">
+      <h2>Placement Statistics</h2>
+      <div class="stats">
+        <div class="card"><p>Students Placed</p><div class="number">1200+</div></div>
+        <div class="card"><p>Recruiting Companies</p><div class="number">150+</div></div>
+        <div class="card"><p>Highest Package</p><div class="number">₹50 LPA</div></div>
+      </div>
+    </section>
 
-    <h2>Register Number</h2>
-    <p>24MIS0327</p>
+    <section id="students">
+      <h2>Featured Student Profiles</h2>
+      <div class="cards">
+        <div class="card"><h3>Student A</h3><p>Software Engineering</p><p>Skills: Java, SQL</p></div>
+        <div class="card"><h3>Student B</h3><p>Computer Science</p><p>Skills: Python, ML</p></div>
+      </div>
+    </section>
 
-    <h2>Department</h2>
-    <p>SOFTWARE ENGINEERING</p>
+    <section id="companies">
+      <h2>Partner Companies</h2>
+      <div class="cards">
+        <div class="card"><h3>Microsoft</h3><p>Software Development</p><p>Eligibility: Relevant degree and coding skills</p></div>
+        <div class="card"><h3>Amazon</h3><p>Graduate Engineer</p><p>Eligibility: Programming and problem-solving</p></div>
+        <div class="card"><h3>TCS</h3><p>Graduate Trainee</p><p>Eligibility: As specified in the job notice</p></div>
+      </div>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C++</li>
-        <li>Docker</li>
-        <li>Kubernetes</li>
-    </ul>
+    <section id="drives">
+      <h2>Upcoming Recruitment Drives</h2>
+      <div class="card">
+        <h3>Software Engineer Recruitment</h3>
+        <p>Company: Example Technologies</p>
+        <p>Date: 25 October 2026</p>
+        <p>Check the placement cell notice for eligibility and registration.</p>
+        <button onclick="alert('Please contact the placement cell for registration details.')">
+          View Details
+        </button>
+      </div>
+    </section>
+  </main>
 
-    <h2>Career Objective</h2>
-    <p>
-        To develop strong technical skills and build a successful career
-        in software engineering by working on innovative and practical
-        technology solutions.
-    </p>
-
+  <footer>VIT Placement Cell | Student Career Portal</footer>
 </body>
 </html>
